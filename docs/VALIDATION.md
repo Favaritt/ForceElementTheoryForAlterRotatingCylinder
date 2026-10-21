@@ -13,8 +13,3 @@
 - 生成库：`libfieldFunctionObjects_USER_FEMAlterRotatingCylinder.so`；编译产物未纳入仓库。
 - 上传文件清单检查、常见凭据模式检查和新增文件空白检查通过。
 
-## 验证范围
-
-本次没有修改原始源文件或 Make 配置。原有换行与文件末尾空行也予以保留。
-
-本次完成了原样源码的编译与链接验证，没有运行 CFD 算例、并行计算、配置片段运行测试或物理精度验证。`examples/functions.dict` 为使用格式示意，不是完整验证算例。其他 OpenFOAM 版本的兼容性未测试。

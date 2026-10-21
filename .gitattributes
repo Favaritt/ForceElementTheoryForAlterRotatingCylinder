@@ -1,0 +1,16 @@
+# Preserve original OpenFOAM source/build files byte for byte.
+ForceElementTheoryForAlterRotatingCylinder/*.C -text
+ForceElementTheoryForAlterRotatingCylinder/*.H -text
+Make/files -text
+Make/options -text
+
+# Keep newly added documentation and shell scripts portable.
+*.md text eol=lf
+*.json text eol=lf
+*.sha256 text eol=lf
+*.dict text eol=lf
+Allwmake text eol=lf
+Allwclean text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

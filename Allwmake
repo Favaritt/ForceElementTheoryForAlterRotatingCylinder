@@ -1,0 +1,9 @@
+#!/bin/sh
+# Build from the repository root after sourcing the OpenFOAM environment.
+set -eu
+cd "$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+if ! command -v wmake >/dev/null 2>&1; then
+    echo "wmake not found. Source your OpenFOAM etc/bashrc first." >&2
+    exit 1
+fi
+exec wmake libso "$@"

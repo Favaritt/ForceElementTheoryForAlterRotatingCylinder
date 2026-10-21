@@ -1,0 +1,4 @@
+ForceElementTheoryForAlterRotatingCylinder/ForceElementTheoryForAlterRotatingCylinder.C
+
+
+LIB = $(FOAM_USER_LIBBIN)/libfieldFunctionObjects_USER_FEMAlterRotatingCylinder

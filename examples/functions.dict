@@ -1,0 +1,26 @@
+// Configuration fragment to place inside system/controlDict's functions block.
+// Illustrative values only: replace geometry, density and patch names for your case.
+// This fragment is NOT a complete runnable CFD case.
+cylinderForceX
+{
+    type                ForceElementTheoryForAlterRotatingCylinder;
+    libs                ("libfieldFunctionObjects_USER_FEMAlterRotatingCylinder.so");
+
+    field               U;
+    wallID              (cylinder);
+    radius              [0 1 0 0 0 0 0] 0.5;
+    rho                 [1 -3 0 0 0 0 0] 1;
+    potentialSpeed      [0 1 -1 0 0 0 0] 1;
+    cylinderCentre      (0 0 0);
+    forceDirection      (1 0 0);
+
+    executeControl      timeStep;
+    executeInterval     1;
+    writeControl        timeStep;
+    writeInterval       1;
+    writePrecision      15;
+
+    writeFields         false;
+    fieldWriteControl   writeTime;
+    fieldWriteInterval  1;
+}

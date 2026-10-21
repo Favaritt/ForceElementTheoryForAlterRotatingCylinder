@@ -1,0 +1,19 @@
+# OpenFOAM generated includes and platform build directories
+lnInclude/
+Make/*/
+
+# Compiled libraries, object files and dependency files
+*.o
+*.so
+*.a
+*.dep
+
+# Local build logs and editor/OS files
+log.*
+*.log
+*~
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

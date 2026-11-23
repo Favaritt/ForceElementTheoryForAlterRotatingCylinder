@@ -1,5 +1,5 @@
 {
-  "case": "T0/Omega0",
+  "case": "Re=150时的无滑移圆柱",
   "time_s": {
     "first": 700.0,
     "last": 800.0,
@@ -45,5 +45,64 @@
       "wall_velocity_max_abs_N": 0.0,
       "wall_shear_vs_viscous_rms_N": 0.0003372260369602466
     }
-  }
+  },
+  "history_figures": {
+    "time_s": [
+      780.0,
+      800.0
+    ],
+    "reference_area_m2": 1.0,
+    "force_scale_N": 0.5,
+    "metrics": {
+      "drag": {
+        "pressure_bias": -0.03670995185133411,
+        "pressure_rmse": 0.036711306804801246,
+        "pressure_max_abs_error": 0.037539566537999836
+      },
+      "lift": {
+        "pressure_bias": -0.0001196435560600455,
+        "pressure_rmse": 0.00795126691568502,
+        "pressure_max_abs_error": 0.011364793610780077
+      }
+    }
+  },
+  "spatial_snapshot": {
+    "time_s": 800,
+    "cell_count": 97732,
+    "directions": {
+      "drag": {
+        "potential_min_m2_s": -0.487708181142807,
+        "potential_max_m2_s": 0.487708181142807,
+        "potential_vs_analytic_max_abs_m2_s": 2.0237616082940946e-08,
+        "volume_field_min_m_s2": -6.677043437957764,
+        "volume_field_max_m_s2": 2.53165864944458,
+        "integrated_volume_field_N": 0.36930174607390837,
+        "force_history_volume_term_N": 0.3693017930221,
+        "integral_minus_force_history_N": -4.694819161210617e-08
+      },
+      "lift": {
+        "potential_min_m2_s": -0.487708181142807,
+        "potential_max_m2_s": 0.487708181142807,
+        "potential_vs_analytic_max_abs_m2_s": 2.0237616082940946e-08,
+        "volume_field_min_m_s2": -10.312164306640625,
+        "volume_field_max_m_s2": 7.9472832679748535,
+        "integrated_volume_field_N": -0.14724358569408696,
+        "force_history_volume_term_N": -0.1472435790781,
+        "integral_minus_force_history_N": -6.615986952729358e-09
+      }
+    },
+    "inputs_sha256": {
+      "Result_Ensight/Ensight_800/Omega0.case": "4316dfd0270c09406c9c76ef13b2cb7068965cb6c8029fa328e70ddfc5923057",
+      "Result_Ensight/Ensight_800/data/constant/geometry": "902bc220896ea01291f872fb95bff62c21533eba70dc5d731e54aa34947ced02",
+      "800/drag_FlowStructureContribution": "a2bebc2d9397680460efca22ea0fd64a24218921bc17ce4dc6977a65e2e1f531",
+      "Result_Ensight/Ensight_800/data/00160000/drag_FlowStructureContribution": "22d0ff8db979a2aa48542f18ac99aff6e98305479beafcea8dd49d21acbdd6d5",
+      "800/drag_Potential": "548eb0eea9a30eb584f4f1fadea7aac431a5418ee1234f57cbe74958ec9b2bdb",
+      "Result_Ensight/Ensight_800/data/00160000/drag_Potential": "1abe028ca873d46865ee52767348afeb24bcfdf91800cfd7eabab10ecf239d10",
+      "800/lift_FlowStructureContribution": "8723d40558a5ddc09ae06e8142bb2bd895d2b9b090ae4623a392c89cb769a7b5",
+      "Result_Ensight/Ensight_800/data/00160000/lift_FlowStructureContribution": "62b086e74714343eb9b868da42cc7f347cd54b9c6f1563c0e0946533ffb2200e",
+      "800/lift_Potential": "5e8ef8b3741cb0702d8641f87ebbc2703bca530c4d781de7e264c60d61832d12",
+      "Result_Ensight/Ensight_800/data/00160000/lift_Potential": "031813bed7f56f3629d1ca015369c9f4b11343b6b41e6394f88c413ec3d38d44"
+    }
+  },
+  "source_case": "T0/Omega0"
 }

@@ -1,0 +1,108 @@
+{
+  "case": "Re=150时的无滑移圆柱",
+  "time_s": {
+    "first": 700.0,
+    "last": 800.0,
+    "step": 0.005
+  },
+  "sample_count": 20001,
+  "rho_kg_m3": 1.0,
+  "magUInf_m_s": 1.0,
+  "Aref_m2": 0.785398,
+  "force_scale_N": 0.392699,
+  "inputs_sha256": {
+    "postProcessing/FEMDrag/0/force_FEM.dat": "14c2622346a94848ab7d867cbd10b702f8954111732d045433228dc0481c26d8",
+    "postProcessing/FEMLift/0/force_FEM.dat": "31feab8cba4b26d1742db2608e9f6bb921fb52ccda25e321fe0d53f31bf20924",
+    "postProcessing/forces/0/force.dat": "ddd484c27299a5f90b62461b915e3deec2c7789d2bf2c41c46c13f3217bd1741",
+    "postProcessing/forceCoeffs/0/coefficient.dat": "8179cb605b47e177ed19f8fa106da3e5ad283fb965f56f77d9079ef1e73ffee6"
+  },
+  "metrics": {
+    "Cd": {
+      "reference_mean": 1.7038574693253592,
+      "reconstructed_mean": 1.6593893598204477,
+      "reference_fluctuation_rms": 0.023333668820418395,
+      "reconstructed_fluctuation_rms": 0.023712550278064282,
+      "bias": -0.044468109504911466,
+      "rmse": 0.044470193521135105,
+      "max_abs_error": 0.04558027221682659,
+      "rmse_over_reference_rms_pct": 2.609726745580399,
+      "force_coeffs_crosscheck_max_abs": 6.263878304935133e-13,
+      "flow_split_max_abs_N": 1.0008660566995786e-13,
+      "wall_velocity_max_abs_N": 0.0,
+      "wall_shear_vs_viscous_rms_N": 0.0008990430384572343
+    },
+    "Cl": {
+      "reference_mean": -0.009624826141394068,
+      "reconstructed_mean": -0.00983373154946754,
+      "reference_fluctuation_rms": 0.47918540824165,
+      "reconstructed_fluctuation_rms": 0.48988385516482563,
+      "bias": -0.00020890540807347123,
+      "rmse": 0.010735977164898871,
+      "max_abs_error": 0.015558336049552701,
+      "rmse_over_reference_rms_pct": 2.240012315843002,
+      "force_coeffs_crosscheck_max_abs": 1.765254609153999e-13,
+      "flow_split_max_abs_N": 1.0011436124557349e-13,
+      "wall_velocity_max_abs_N": 0.0,
+      "wall_shear_vs_viscous_rms_N": 0.0003372260369602466
+    }
+  },
+  "history_figures": {
+    "time_s": [
+      780.0,
+      800.0
+    ],
+    "reference_area_m2": 1.0,
+    "force_scale_N": 0.5,
+    "metrics": {
+      "drag": {
+        "pressure_bias": -0.03670995185133411,
+        "pressure_rmse": 0.036711306804801246,
+        "pressure_max_abs_error": 0.037539566537999836
+      },
+      "lift": {
+        "pressure_bias": -0.0001196435560600455,
+        "pressure_rmse": 0.00795126691568502,
+        "pressure_max_abs_error": 0.011364793610780077
+      }
+    }
+  },
+  "spatial_snapshot": {
+    "time_s": 800,
+    "cell_count": 97732,
+    "directions": {
+      "drag": {
+        "potential_min_m2_s": -0.487708181142807,
+        "potential_max_m2_s": 0.487708181142807,
+        "potential_vs_analytic_max_abs_m2_s": 2.0237616082940946e-08,
+        "volume_field_min_m_s2": -6.677043437957764,
+        "volume_field_max_m_s2": 2.53165864944458,
+        "integrated_volume_field_N": 0.36930174607390837,
+        "force_history_volume_term_N": 0.3693017930221,
+        "integral_minus_force_history_N": -4.694819161210617e-08
+      },
+      "lift": {
+        "potential_min_m2_s": -0.487708181142807,
+        "potential_max_m2_s": 0.487708181142807,
+        "potential_vs_analytic_max_abs_m2_s": 2.0237616082940946e-08,
+        "volume_field_min_m_s2": -10.312164306640625,
+        "volume_field_max_m_s2": 7.9472832679748535,
+        "integrated_volume_field_N": -0.14724358569408696,
+        "force_history_volume_term_N": -0.1472435790781,
+        "integral_minus_force_history_N": -6.615986952729358e-09
+      }
+    },
+    "inputs_sha256": {
+      "Result_Ensight/Ensight_800/Omega0.case": "4316dfd0270c09406c9c76ef13b2cb7068965cb6c8029fa328e70ddfc5923057",
+      "Result_Ensight/Ensight_800/data/constant/geometry": "902bc220896ea01291f872fb95bff62c21533eba70dc5d731e54aa34947ced02",
+      "800/drag_FlowStructureContribution": "a2bebc2d9397680460efca22ea0fd64a24218921bc17ce4dc6977a65e2e1f531",
+      "Result_Ensight/Ensight_800/data/00160000/drag_FlowStructureContribution": "22d0ff8db979a2aa48542f18ac99aff6e98305479beafcea8dd49d21acbdd6d5",
+      "800/drag_Potential": "548eb0eea9a30eb584f4f1fadea7aac431a5418ee1234f57cbe74958ec9b2bdb",
+      "Result_Ensight/Ensight_800/data/00160000/drag_Potential": "1abe028ca873d46865ee52767348afeb24bcfdf91800cfd7eabab10ecf239d10",
+      "800/lift_FlowStructureContribution": "8723d40558a5ddc09ae06e8142bb2bd895d2b9b090ae4623a392c89cb769a7b5",
+      "Result_Ensight/Ensight_800/data/00160000/lift_FlowStructureContribution": "62b086e74714343eb9b868da42cc7f347cd54b9c6f1563c0e0946533ffb2200e",
+      "800/lift_Potential": "5e8ef8b3741cb0702d8641f87ebbc2703bca530c4d781de7e264c60d61832d12",
+      "Result_Ensight/Ensight_800/data/00160000/lift_Potential": "031813bed7f56f3629d1ca015369c9f4b11343b6b41e6394f88c413ec3d38d44"
+    }
+  },
+  "source_case": "T0/Omega0"
+}

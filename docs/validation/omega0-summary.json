@@ -1,0 +1,49 @@
+{
+  "case": "T0/Omega0",
+  "time_s": {
+    "first": 700.0,
+    "last": 800.0,
+    "step": 0.005
+  },
+  "sample_count": 20001,
+  "rho_kg_m3": 1.0,
+  "magUInf_m_s": 1.0,
+  "Aref_m2": 0.785398,
+  "force_scale_N": 0.392699,
+  "inputs_sha256": {
+    "postProcessing/FEMDrag/0/force_FEM.dat": "14c2622346a94848ab7d867cbd10b702f8954111732d045433228dc0481c26d8",
+    "postProcessing/FEMLift/0/force_FEM.dat": "31feab8cba4b26d1742db2608e9f6bb921fb52ccda25e321fe0d53f31bf20924",
+    "postProcessing/forces/0/force.dat": "ddd484c27299a5f90b62461b915e3deec2c7789d2bf2c41c46c13f3217bd1741",
+    "postProcessing/forceCoeffs/0/coefficient.dat": "8179cb605b47e177ed19f8fa106da3e5ad283fb965f56f77d9079ef1e73ffee6"
+  },
+  "metrics": {
+    "Cd": {
+      "reference_mean": 1.7038574693253592,
+      "reconstructed_mean": 1.6593893598204477,
+      "reference_fluctuation_rms": 0.023333668820418395,
+      "reconstructed_fluctuation_rms": 0.023712550278064282,
+      "bias": -0.044468109504911466,
+      "rmse": 0.044470193521135105,
+      "max_abs_error": 0.04558027221682659,
+      "rmse_over_reference_rms_pct": 2.609726745580399,
+      "force_coeffs_crosscheck_max_abs": 6.263878304935133e-13,
+      "flow_split_max_abs_N": 1.0008660566995786e-13,
+      "wall_velocity_max_abs_N": 0.0,
+      "wall_shear_vs_viscous_rms_N": 0.0008990430384572343
+    },
+    "Cl": {
+      "reference_mean": -0.009624826141394068,
+      "reconstructed_mean": -0.00983373154946754,
+      "reference_fluctuation_rms": 0.47918540824165,
+      "reconstructed_fluctuation_rms": 0.48988385516482563,
+      "bias": -0.00020890540807347123,
+      "rmse": 0.010735977164898871,
+      "max_abs_error": 0.015558336049552701,
+      "rmse_over_reference_rms_pct": 2.240012315843002,
+      "force_coeffs_crosscheck_max_abs": 1.765254609153999e-13,
+      "flow_split_max_abs_N": 1.0011436124557349e-13,
+      "wall_velocity_max_abs_N": 0.0,
+      "wall_shear_vs_viscous_rms_N": 0.0003372260369602466
+    }
+  }
+}
